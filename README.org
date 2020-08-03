@@ -1,12 +1,18 @@
 
-* Make 16 Simple game challenge
+* Make 16 Simple games challenge
 Inspired here:
 https://github.com/jlopezr/16-games/
+
 https://www.youtube.com/playlist?list=PLB_ibvUSN7mzUffhiay5g5GUHyJRO4DYr
+
+
+
+
+
 
 * Games list
 
-| Game             | Language | Core Tech/Engine |
-| 01 - tetris      | Clojure  | play-cljc        |
-| 02 - doodle jump | C/C++    | ORX Engine       |
-|                  |          |                  |
+| Game             | Language | Core Tech/Engine | Screenshot |
+| 01 - tetris      | Clojure  | play-cljc        |            |
+| 02 - doodle jump | C/C++    | ORX Engine       | [[file:02-doodle-jump/screenshot.png][Doodle]]     |
+|                  |          |                  |            |

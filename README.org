@@ -15,4 +15,5 @@ https://www.youtube.com/playlist?list=PLB_ibvUSN7mzUffhiay5g5GUHyJRO4DYr
 | Game             | Language | Core Tech/Engine | Screenshot |
 | 01 - tetris      | Clojure  | play-cljc        |            |
 | 02 - doodle jump | C/C++    | ORX Engine       | [[file:02-doodle-jump/screenshot.png][Doodle]]     |
+| 03 - arkanoid    | C/C++    | ORX Engine       | [[file:03-arkanoid/screenshot.png][Arkanoid]]   |
 |                  |          |                  |            |

@@ -63,8 +63,8 @@ void orxFASTCALL Update(const orxCLOCK_INFO *_pstClockInfo, void *_pContext)
 
         orxObject_SetTextString(scoreObject, formattedScore);
     }
-
 }
+
 /**
    Physics handler
 */

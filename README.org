@@ -12,20 +12,20 @@ https://www.youtube.com/playlist?list=PLB_ibvUSN7mzUffhiay5g5GUHyJRO4DYr
 
 * Games list
 
-| Game                   | Language | Core Tech/Engine | Screenshot      |
-| 01 - tetris            | Clojure  | play-cljc        | [[https://github.com/Ondra09/tetris][Git Tetris repo]] |
-| 02 - doodle jump       | C/C++    | ORX Engine       | [[file:02-doodle-jump/screenshot.png][Doodle]]          |
-| 03 - arkanoid          | C/C++    | ORX Engine       | [[file:03-arkanoid/screenshot.png][Arkanoid]]        |
-| 04 - snake             |          |                  |                 |
-| 05 - minesweeper       |          |                  |                 |
-| 06 - fifteen-puzzle    |          |                  |                 |
-| 07 - racing (top down) |          |                  |                 |
-| 08 - outrun            |          |                  |                 |
-| 09 - xonix             |          |                  |                 |
-| 10 - bejeweled         |          |                  |                 |
-| 11 - netwalk           |          |                  |                 |
-| 12 - mahjong solitaire |          |                  |                 |
-| 13 - tron              |          |                  |                 |
-| 15 - chess client      |          |                  |                 |
-| 16 - voleyball         |          |                  |                 |
-| 17 - asteroids         |          |                  |                 |
+| Game                   | Language | Core Tech/Engine  | Screenshot      |
+| 01 - tetris            | Clojure  | play-cljc         | [[https://github.com/Ondra09/tetris][Git Tetris repo]] |
+| 02 - doodle jump       | C/C++    | ORX Engine        | [[file:02-doodle-jump/screenshot.png][Doodle]]          |
+| 03 - arkanoid          | C/C++    | ORX Engine        | [[file:03-arkanoid/screenshot.png][Arkanoid]]        |
+| 04 - snake             |          |                   |                 |
+| 05 - minesweeper       | C++      | ORX/Scroll Engine |                 |
+| 06 - fifteen-puzzle    |          |                   |                 |
+| 07 - racing (top down) |          |                   |                 |
+| 08 - outrun            |          |                   |                 |
+| 09 - xonix             |          |                   |                 |
+| 10 - bejeweled         |          |                   |                 |
+| 11 - netwalk           |          |                   |                 |
+| 12 - mahjong solitaire |          |                   |                 |
+| 13 - tron              |          |                   |                 |
+| 15 - chess client      |          |                   |                 |
+| 16 - voleyball         |          |                   |                 |
+| 17 - asteroids         |          |                   |                 |

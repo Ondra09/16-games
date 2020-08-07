@@ -32,8 +32,6 @@ private :
     void Exit();
     void BindObjects();
 
-    TileObject* board[BOARD_SIZE][BOARD_SIZE];
-
 private:
 };
 

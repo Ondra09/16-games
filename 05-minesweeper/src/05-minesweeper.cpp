@@ -58,33 +58,17 @@ void Minesweeper::Update(const orxCLOCK_INFO &_rstInfo)
         // we need to change graphics
         if (tileChanged)
         {
-            // see tutorial: https://wiki.orx-project.org/en/tutorials/community/sausage/semi-dynamic_objects_and_level_mapping
-            auto *tile = dynamic_cast<TileObject*>(object);
-            auto *tileObject = tile->GetOrxObject();
-
-            // clear old
-            orxGRAPHIC *linkedGraphic = orxGRAPHIC(orxOBJECT_GET_STRUCTURE(tileObject, GRAPHIC));
-
-            if (linkedGraphic)
-            {
-                orxObject_UnlinkStructure(tileObject, orxSTRUCTURE_ID_GRAPHIC);
-                // it does not seems to be leaking
-                // orxGraphic_Delete(linkedGraphic);
-                // orxObject_Delete(object);
-            }
-
             orxCHAR buffer[16] = {"G-Tile10"};
-            if ((int)tile->tileShown < 12)
+
+            auto *tile = dynamic_cast<TileObject*>(object);
+
+            orxString_NPrint(buffer, sizeof(buffer) - 1, "A-Tile%d", (int)tile->tileShown);
+
+            if (tile)
             {
-                orxString_NPrint(buffer, sizeof(buffer) - 1, "G-Tile%d", (int)tile->tileShown);
+                orxLOG("Changing anim %s", buffer);
+                tile->SetAnim(buffer);
             }
-
-            // create new
-            orxGRAPHIC *graphic;
-            graphic = orxGraphic_CreateFromConfig(buffer);
-
-
-            orxObject_LinkStructure(tileObject, orxSTRUCTURE(graphic));
         }
     }
 }
@@ -171,8 +155,6 @@ orxSTATUS Minesweeper::Init()
             // TODO: remove magic numbers 32
             tile->SetPosition({j*32.0f-5*32, i*32.0f - 4*32, 0}, orxTRUE);
             tile->tile = initBoard[i][j];
-
-            board[i][j] = tile;
         }
     }
 

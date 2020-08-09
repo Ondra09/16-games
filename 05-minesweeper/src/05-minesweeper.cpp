@@ -30,7 +30,7 @@ void Minesweeper::Update(const orxCLOCK_INFO &_rstInfo)
         bool tileChanged = false;
         if(object && (orxInput_HasBeenActivated("Select")))
         {
-            auto *tile = dynamic_cast<TileObject*>(object);
+            auto *tile = ScrollCast<TileObject*>(object);
 
             if (tile
                 && tile->tileShown == TileObject::Tiles::NEW)
@@ -42,7 +42,7 @@ void Minesweeper::Update(const orxCLOCK_INFO &_rstInfo)
 
         if(object && (orxInput_HasBeenActivated("Flag")))
         {
-            auto *tile = dynamic_cast<TileObject*>(object);
+            auto *tile = ScrollCast<TileObject*>(object);
 
             if (tile && tile->tileShown == TileObject::Tiles::NEW)
             {
@@ -60,7 +60,7 @@ void Minesweeper::Update(const orxCLOCK_INFO &_rstInfo)
         {
             orxCHAR buffer[16] = {"G-Tile10"};
 
-            auto *tile = dynamic_cast<TileObject*>(object);
+            auto *tile = ScrollCast<TileObject*>(object);
 
             orxString_NPrint(buffer, sizeof(buffer) - 1, "A-Tile%d", (int)tile->tileShown);
 
@@ -151,7 +151,7 @@ orxSTATUS Minesweeper::Init()
     {
         for (int j = 0; j < BOARD_SIZE; j++)
         {
-            auto *tile = dynamic_cast<TileObject*>(CreateObject("O-Tile"));
+            auto *tile = CreateObject<TileObject>("O-Tile");
             // TODO: remove magic numbers 32
             tile->SetPosition({j*32.0f-5*32, i*32.0f - 4*32, 0}, orxTRUE);
             tile->tile = initBoard[i][j];

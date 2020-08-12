@@ -20,7 +20,7 @@ https://www.youtube.com/playlist?list=PLB_ibvUSN7mzUffhiay5g5GUHyJRO4DYr
 | 05 - minesweeper       | C++      | ORX/Scroll Engine | [[file:05-minesweeper/screenshot.png][Mine Sweeper]]    |
 | 06 - fifteen-puzzle    |          |                   |                 |
 | 07 - racing (top down) |          |                   |                 |
-| 08 - outrun            |          |                   |                 |
+| 08 - outrun            | C++      | ORX Engine        | [[file:08-outrun/screenshot.png][Outrun]]          |
 | 09 - xonix             |          |                   |                 |
 | 10 - bejeweled         |          |                   |                 |
 | 11 - netwalk           |          |                   |                 |
